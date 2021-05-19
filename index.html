@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Philippine Experience</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images\icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+</head>
+
+<body>
+  <header id="top-header">
+    <a href="#0" onclick=main()><img src="images\logo.png"></a>
+  </header>
+
+  <table style="width:90%" class="center">
+    <tr id="0" class="main">
+      <td id="Left"><img src="images\map-philippines.png"></td>
+      <td id="Right">
+        <p>
+          <span class="welcome">WELCOME TO <br>THE PHILIPPINES<br></span>
+          <span class="welcome-qoute">Explore and Experience Philippines Today!</span>
+        </p>
+        <div class="location-info">
+          <img src="images/location.png" alt="" height="30px">
+          <p>El Nido, Philippines</p>
+        </div>
+
+      </td>
+    </tr>
+
+    <tr id="1" class="navLinks">
+      <td id="Left"><img src="images\map-luzon.png"></td>
+      <td id="Right">
+        <p>
+          <span class="welcome">LUZON<br></span>
+          <span class="welcome-qoute">Luzon, largest and most important island in the Philippines. It is the site of<br>
+            Manila, the nation's capital and the majot metropolis, and of Quezon City. <br>
+            Located on the northern part of the Philippine archipelago.</span>
+        </p>
+        <div class="location-info">
+          <img src="images/location.png" alt="" height="30px">
+          <p>Cambulo, Ifuago Province, Philippines</p>
+        </div>
+        <br>
+        <p class="explore luzon" style="border: 2px solid blue;">
+          <a href="Luzon.html" class="explore-luzon">EXPLORE</a>
+        </p>
+      </td>
+    </tr>
+
+    <tr id="2" class="navLinks">
+      <td id="Left"><img src="images\map-visayas.png"></td>
+      <td id="Right">
+        <p>
+          <span class="welcome">VISAYAS<br></span>
+          <span class="welcome-qoute">This island group should not be underestimated. One of its small,<br>
+            scattered islands witnessed important historical events, and the <br>
+            Visayas region is also home to a number of prestine, white sand <br>
+            beaches.</span>
+        </p>
+        <div class="location-info">
+          <img src="images/location.png" alt="" height="30px">
+          <p>Chocolate Hills, Bohol, Philippines</p>
+        </div>
+        <br>
+        <p class="explore visayas" style="border: 2px solid maroon;">
+          <a href="Luzon.html" class="explore-visayas">EXPLORE</a>
+        </p>
+      </td>
+    </tr>
+
+    <tr id="3" class="navLinks">
+      <td id="Left"><img src="images\map-mindanao.png"></td>
+      <td id="Right">
+        <p>
+          <span class="welcome">MINDANAO<br></span>
+          <span class="welcome-qoute">Being the second largest island group next to Luzon, Mindanao has been<br>
+            dubbed the country's "Land of Promise" becasue of its promising natural<br>
+            resources. It is also known worldwide for being the surf capital of<br>
+            the Philippines, a famous highly-urbanized city, and jaw-dropping beaches.
+          </span>
+        </p>
+        <div class="location-info">
+          <img src="images/location.png" alt="" height="30px">
+          <p>Davao Bukidnon Highway, Davao del Sur, Philippines</p>
+        </div>
+        <br>
+        <p class="explore mindanao" style="border: 2px solid yellow;">
+          <a href="Luzon.html" class="explore-mindanao">EXPLORE</a>
+        </p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- NAVIGATION -->
+
+
+  <p style="text-align: center; font-family: monsterrat; font-weight:bold; margin:20px 0;">Choose Island Region</p>
+  <div class="choose-region">
+    <ul class="regions">
+      <li><a id="luzon" href="#1" onclick=luzon()>Luzon</a></li>
+      <li style="border-style: none solid;"><a id="visayas" href="#2" onclick=visayas()>Visayas</a></li>
+      <li><a id="mindanao" href="#3" onclick=mindanao()>Mindanao</a></li>
+    </ul>
+  </div>
+
+  <!-- END OF NAVIGATION -->
+
+  <!--<div class="content-border"></div>-->
+  <div class="content">
+    <p><span class="content-title">ABOUT THE PHILIPPINE EXPERIENCE </span><br>
+      This website is a platform for both local and foreign travelers to discover and learn <br>
+      more about the tourism in the Philippines. we showcase different tourist attractions, <br>
+      local foods, activities, festivals and events in the Philippines.
+    </p>
+    <table class="home-table">
+      <tr>
+        <td style="text-align: right;"><span class="content-title">ATTRACTIONS</span></br>
+          Be amazed from the wonderful tourists spots </br>
+          and attractions all around the Philippines.</td>
+        <th><img src="images/yellow.png" alt="Tourist Attractions"></th>
+        <th><img src="images/red.png" alt="Food and Cuisines"></th>
+        <td style="text-align: left;"><span class="content-title">FOOD AND CUISINES</span></br>
+          Taste all the unique food and cuisines</br>
+          from the Philippines.</td>
+      </tr>
+      <tr>
+        <td style="text-align: right;"><span class="content-title">FESTIVALS AND EVENTS</span></br>
+          Discover different festivals and events that will make </br>
+          everyone love the culture of the Philippines.</td>
+        <th><img src="images/blue.png" alt="Festivals and Events"></th>
+        <th><img src="images/white.png" alt="Activities"></th>
+        <td style="text-align: left;"><span class="content-title">ACTIVITIES</span></br>
+          Make your stay in the Philippines</br>
+          become an adventure.</td>
+      </tr>
+    </table>
+  </div>
+
+  <footer>
+   <div class="container">
+     <div class="row">
+       <div class="column">
+         <img class="logo" src="images/logo.png" alt="logo">
+       </div>
+       <div class="column">
+         <h4>TOURISM AGENCIES</h4>
+         <ul>
+           <li><a href="http://tourism.gov.ph" target="_blank">DOT</a></li>
+           <li><a href="http://www.nationalparks.ph/" target="_blank">NPDC</a></li>
+           <li><a href="https://www.facebook.com/NayongPilipinoOfficial/" target="_blank">NPF</a></li>
+           <li><a href="http://www.divephilippines.com.ph/" target="_blank">PCSSD</a></li>
+           <li><a href="http://www.pra.gov.ph/" target="_blank">PRA</a></li>
+           <li><a href="http://www.tieza.gov.ph/" target="_blank">TIEZA</a></li>
+           <li><a href="https://www.tpb.gov.ph/" target="_blank">TPB</a></li>
+         </ul>
+       </div>
+       <div class="column">
+         <h4>Inquiries / Questions</h4>
+         <p class="inquiry">
+           If you have any inquiries, questions, or need <br />
+           more information, send us a message.
+         </p>
+         <br />
+         <a href="#" class="message"><i class="material-icons" style="font-size: 14px;">message</i>&nbsp&nbspContact Us</a>
+         <br><br>
+         <h4>Social Networks</h4>
+         <a href="https://www.facebook.com/The-Philippine-Experience-102642668670184" target="_blank"><img class="social" src="images/facebook.png" alt="Facebook"/></a>
+         <a href="https://twitter.com/phexperience15" target="_blank"><img class="social" src="images/twitter.png" alt="Twitter"/></a>
+         <a href="https://www.instagram.com/phexperience15/" target="_blank"><img class="social" src="images/instagram.png" alt="Instagram"/></a>
+         <a href="mailto:thephexperience@inquiry.com" target="_blank"><img class="social" src="images/email.png" alt="Email"/></a>
+       </div>
+
+     </div>
+     <div class="row">
+       <p class="copyright">Copyright &#169; 2021 SillyDev. All Rights Reserved.</p>
+     </div>
+   </div>
+ </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    function luzon() {
+      document.body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/home-luzon.jpg')";
+      //$("body").css("background-image", "url(\"images/home-luzon.jpg\")");
+    }
+
+    function visayas() {
+      document.body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/home-visayas.jpg')";
+    }
+
+    function mindanao() {
+      document.body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/home-mindanao.jpg')";
+    }
+
+    function main() {
+      document.body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/home-background.jpg')";
+    }
+    $('a').click(function(){
+      $('.navLinks').hide();
+      $('.main').hide();
+      $(this.getAttribute('href')).show();
+    });
+
+  </script>
+</body>
+
+</html>

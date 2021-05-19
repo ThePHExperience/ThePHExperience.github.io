@@ -1,0 +1,307 @@
+@font-face {
+  font-family: 'bitterbrush';
+  src: url('fonts/bitterbrush.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'monsterrat';
+  src: url('fonts/monsterrat.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'segoe';
+  src: url('fonts/segoe.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'anton';
+  src: url('fonts/anton.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/******************/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/home-background.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding-left: 30px;
+  margin-bottom: -60px;
+}
+
+header img {
+  height: 110px;
+}
+
+.center {
+  height: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -70px;
+}
+
+#Left {
+  text-align: center;
+  width: 30%;
+  padding-bottom: 30px
+}
+
+#Left img {
+  width: 100%;
+}
+
+#Right {
+  width: 70%;
+  font-size: 15px;
+  text-align: right;
+  padding-bottom: 30px
+}
+
+.welcome {
+  font-size: 120px;
+  text-align: right;
+  font-family: bitterbrush;
+  line-height: 120px;
+}
+
+.welcome-qoute {
+  font-size: 20px;
+  text-align: right;
+  font-family: montserrat;
+}
+
+.location-info {
+  margin: 10px 0;
+  display: inline-flex;
+  align-items: center;
+  font-family: monsterrat;
+  font-size: 14px;
+}
+
+.explore {
+  font-family: monsterrat;
+  letter-spacing: .25em;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.explore a {
+  color: white;
+}
+
+.explore.luzon:hover {
+  background-color: blue;
+}
+
+.explore.visayas:hover {
+  background-color: maroon;
+}
+
+.explore.mindanao:hover {
+  background-color: yellow;
+}
+
+.navLinks {
+  display: none;
+}
+
+.choose-region {
+  margin: 0 10px;
+}
+
+.regions {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.regions li {
+  font-family: anton;
+  padding: 0 100px;
+  display: inline-block;
+}
+
+.regions li a {
+  font-size: 24px;
+  color: white;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  padding: 0 30px;
+}
+
+.regions li a:after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform .3s ease;
+}
+
+.regions li a:hover:after {
+  transform: scaleX(1);
+}
+
+.content-border {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(0deg, rgb(1, 74, 81), 70%, transparent)
+}
+
+.content {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  background-color: rgb(1, 74, 81);
+}
+
+.content p {
+  text-align: center;
+  color: white;
+  font-family: monsterrat;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.content-title {
+  font-family: bitterbrush;
+  font-size: 30px;
+}
+
+.home-table {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.home-table td {
+  font-family: monsterrat;
+  font-size: 15px;
+  width: 40%;
+  padding-bottom: 30px;
+  vertical-align: middle;
+  padding: 30px 10px;
+}
+
+.home-table th {
+  padding: 15px 10px;
+}
+
+.home-table th img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+footer {
+  background-color: #202020;
+  padding-top: 30px;
+  color: white;
+}
+
+footer .container {
+  max-width: 100%;
+  margin: auto;
+}
+
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+footer .column {
+  width: 30%;
+}
+
+footer .logo {
+  width: 50%;
+}
+
+footer h4 {
+  font-family: monsterrat;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+footer ul {
+  list-style: none;
+  font-family: monsterrat;
+  font-size: 14px;
+  color: white;
+}
+
+footer ul li {
+  padding: 5px 0;
+}
+
+footer ul a {
+  color: white;
+}
+
+footer ul a:hover {
+  text-shadow: 1px 1px 8px white;
+}
+
+.inquiry {
+  font-family: monsterrat;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.message {
+  font-family: monsterrat;
+  font-size: 18px;
+  color: white;
+}
+
+.message:hover {
+  text-shadow: 1px 1px 8px white;
+}
+
+.social {
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+}
+
+.social:hover {
+  -webkit-filter: drop-shadow(1px 1px 8px #FFF);
+  filter: drop-shadow(1px 1px 8px #FFF);
+}
+
+.copyright {
+  font-family: monsterrat;
+  margin-top: 30px;
+}
